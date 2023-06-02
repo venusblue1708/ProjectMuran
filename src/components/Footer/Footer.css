@@ -39,6 +39,12 @@
   }
   .control_left {
     margin: 100px !important;
+    margin-top: 250px !important;
+  }
+}
+@media all and (max-width: 723px) {
+  .control_left {
+    margin-top: 150px !important;
   }
 }
 @media all and (max-width: 612px) {
