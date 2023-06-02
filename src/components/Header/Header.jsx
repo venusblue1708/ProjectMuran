@@ -178,15 +178,11 @@ export default function Header() {
           }}
         >
           {/* adaptive navbar */}
-          <Box
-            id="menu_button"
-            sx={{ flexGrow: 0, display: { xs: "none", md: "flex" } }}
-          >
-            <Tooltip title="Open settings">
-              <IconButton onClick={handleOpenNavMenu} sx={{ p: 0 }}>
-                <MenuIcon />
-              </IconButton>
-            </Tooltip>
+
+          <Box className="menu_button" sx={{ flexGrow: 0 }}>
+            <IconButton onClick={handleOpenNavMenu} sx={{ p: 0 }}>
+              <MenuIcon />
+            </IconButton>
             <Menu
               id="menu-appbar"
               anchorEl={anchorElNav}

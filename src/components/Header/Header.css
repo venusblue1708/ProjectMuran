@@ -1,6 +1,10 @@
 #dropdown {
   display: flex;
   justify-content: center;
+  width: 90% !important;
+}
+.menu_button {
+  display: none;
 }
 .all_navbar {
   display: flex;
@@ -26,7 +30,7 @@
 .second_appbar {
   min-height: 50px !important;
   text-align: center !important;
-  width: 95% !important;
+  width: 95.5% !important;
 }
 .second_typography {
   margin-left: 50px !important;
@@ -34,7 +38,7 @@
   font-weight: 400 !important;
   justify-content: center !important;
 }
-.second_appbar :hover {
+#dropdown :hover {
   background-color: #decec6 !important;
   height: 32px !important;
   border-top: 3px solid #372821 !important ;
@@ -52,6 +56,9 @@
   }
   .icon_button {
     display: none !important;
+  }
+  .icon {
+    margin-left: 20px;
   }
 }
 @media all and (max-width: 634px) {
@@ -100,11 +107,15 @@
   }
 }
 @media all and (max-width: 353px) {
+  .icon {
+    margin-left: 80px;
+  }
   #dropdown {
     display: none;
   }
-  #menu_button {
+  .menu_button {
     display: flex;
+    width: 100%;
   }
   .second_appbar {
     justify-content: space-evenly;
