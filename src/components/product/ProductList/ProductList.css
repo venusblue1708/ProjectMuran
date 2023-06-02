@@ -1,0 +1,43 @@
+.card_product_list {
+  display: flex !important;
+  justify-content: center !important;
+  flex-wrap: wrap !important;
+  width: 80% !important;
+  margin: 20px;
+  margin-left: 80px;
+}
+.product_list_title {
+  display: flex;
+  justify-content: center;
+  font-family: "Nunito", sans-serif !important;
+  font-weight: 900 !important;
+  font-size: 50px !important;
+}
+@media all and (max-width: 536px) {
+  .product_list {
+    width: 400px;
+  }
+}
+@media all and (max-width: 429px) {
+  .product_list_title {
+    font-size: 45px !important;
+  }
+}
+@media all and (max-width: 398px) {
+  .product_list {
+    width: 350px;
+  }
+}
+@media all and (max-width: 379px) {
+  .rec1 {
+    display: none !important;
+  }
+  .card_product_list {
+    margin: 0px !important;
+  }
+}
+@media all and (max-width: 365px) {
+  .product_list {
+    width: 200px !important;
+  }
+}
