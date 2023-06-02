@@ -3,15 +3,21 @@ import Header from "./components/Header/Header";
 import MainRoutes from "./components/routes/MainRoutes";
 import Footer from "./components/Footer/Footer";
 import AdminContextProvider from "./components/contexts/AdminContextProvider";
+import AuthContextProvider from "./components/contexts/AuthContextProvider";
+import WishListContextProvider from "./components/contexts/WishListContextProvider";
 
 const App = () => {
   return (
     <div>
-      <AdminContextProvider>
-        <Header />
-        <MainRoutes />
-        <Footer />
-      </AdminContextProvider>
+      <AuthContextProvider>
+        <WishListContextProvider>
+          <AdminContextProvider>
+            <Header />
+            <MainRoutes />
+            <Footer />
+          </AdminContextProvider>
+        </WishListContextProvider>
+      </AuthContextProvider>
     </div>
   );
 };

@@ -5,7 +5,8 @@ import NotFoundPage from "../pages/NotAboutPage/NotAbountPage";
 import AdminPage from "../pages/AdminPage/AdminPage";
 import ProductPage from "../pages/ProductPage/ProductPage";
 import EditProduct from "../product/EditProduct/EditProduct";
-// import WishList from "../product/WishList/WishList";
+import Auth from "../Auth/Auth";
+import WishList from "../product/WishList/WishList";
 
 const MainRoutes = () => {
   const PUBLIC_ROUTES = [
@@ -13,8 +14,9 @@ const MainRoutes = () => {
     { link: "/*", element: <NotFoundPage />, id: 7 },
     { link: "/admin", element: <AdminPage />, id: 9 },
     { link: "/products", element: <ProductPage />, id: 3 },
-    // { link: "/wishList", element: <WishList />, id: 8 },
+    { link: "/wishList", element: <WishList />, id: 8 },
     { link: "/edit/:id", element: <EditProduct />, id: 11 },
+    { link: "/auth", element: <Auth />, id: 14 },
   ];
   return (
     <div>

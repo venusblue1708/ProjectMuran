@@ -20,7 +20,11 @@ import CallIcon from "@mui/icons-material/Call";
 import MenuIcon from "@mui/icons-material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import Menu from "@mui/material/Menu";
-import { Tooltip } from "@mui/material";
+import { useProducts } from "../contexts/AdminContextProvider";
+import { useAuth } from "../contexts/AuthContextProvider";
+import { ADMIN1, ADMIN2, ADMIN3 } from "../consts/const";
+import { getCountProductsInWishList } from "../functions/functions";
+import { useWishList } from "../contexts/WishListContextProvider";
 
 <style>
   @import
@@ -77,8 +81,25 @@ const settings = [
 ];
 
 export default function Header() {
-  const [anchorElNav, setAnchorElNav] = React.useState(null);
+  const [count, setCount] = React.useState(0);
+  const [like, setLike] = React.useState(0);
+  const { addProductToWishList } = useWishList();
 
+  const [anchorElNav, setAnchorElNav] = React.useState(null);
+  const {
+    handleLogout,
+    user: { email },
+  } = useAuth();
+  const [searchParams, setSearchParams] = useSearchParams();
+  const [search, setSearch] = React.useState(searchParams.get("q") || "");
+  const { getProducts } = useProducts();
+  React.useEffect(() => {
+    setSearchParams({ q: search });
+    getProducts();
+  }, [search]);
+  React.useEffect(() => {
+    setLike(getCountProductsInWishList());
+  }, [addProductToWishList]);
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
   };
@@ -117,7 +138,7 @@ export default function Header() {
               sx={{ mr: 4 }}
               onClick={() => navigate("/wishList")}
             >
-              <Badge badgeContent={5} color="error">
+              <Badge badgeContent={like} color="error">
                 <FavoriteBorderIcon sx={{ color: "black" }} />
               </Badge>
             </IconButton>
@@ -130,7 +151,7 @@ export default function Header() {
               sx={{ mr: 4 }}
               className="icon_button_cart"
             >
-              <Badge badgeContent={5} color="warning">
+              <Badge badgeContent={count} color="warning">
                 <ShoppingCartIcon sx={{ color: "black" }} />
               </Badge>
             </IconButton>
@@ -142,6 +163,8 @@ export default function Header() {
                 placeholder="Search"
                 inputProps={{ "aria-label": "search" }}
                 sx={{ color: "black", borderBlockEnd: "1px solid black" }}
+                onChange={(e) => setSearch(e.target.value)}
+                value={search}
               />
             </Search>
           </Box>
@@ -150,9 +173,9 @@ export default function Header() {
             variant="h6"
             noWrap
             component="a"
+            onClick={() => navigate("/")}
             sx={{
               mr: 2,
-              // display: { xs: "none", md: "flex" },
               fontFamily: "monospace",
               fontWeight: 700,
               letterSpacing: ".3rem",
@@ -201,11 +224,23 @@ export default function Header() {
                 display: { xs: "block", md: "none" },
               }}
             >
-              {settings.map((setting) => (
-                <MenuItem key={setting} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{setting}</Typography>
+              <MenuItem onClick={handleCloseNavMenu}>
+                <Typography textAlign="center">Категории</Typography>
+              </MenuItem>
+              <MenuItem onClick={handleCloseNavMenu}>
+                <Typography textAlign="center">Продукции</Typography>
+              </MenuItem>
+              <MenuItem onClick={handleCloseNavMenu}>
+                <Typography textAlign="center">Контакты</Typography>
+              </MenuItem>
+              <MenuItem onClick={handleCloseNavMenu}>
+                <Typography textAlign="center">Доставка</Typography>
+              </MenuItem>
+              {email === ADMIN1 || email === ADMIN2 || email === ADMIN3 ? (
+                <MenuItem onClick={handleCloseNavMenu}>
+                  <Typography textAlign="center">Добавить продукт</Typography>
                 </MenuItem>
-              ))}
+              ) : null}
             </Menu>
           </Box>
           {/* adaptive navbar */}
@@ -247,22 +282,30 @@ export default function Header() {
               Доставка
             </Typography>
 
-            <Typography
-              className="second_typography"
-              variant="h6"
-              component="div"
-              sx={{ flexGrow: 1, fontSize: "20px" }}
-              onClick={() => navigate("/admin")}
-            >
-              Добавить продукт
-            </Typography>
+            {email === ADMIN1 || email === ADMIN2 || email === ADMIN3 ? (
+              <Typography
+                className="second_typography"
+                variant="h6"
+                component="div"
+                sx={{ flexGrow: 1, fontSize: "20px" }}
+                onClick={() => navigate("/admin")}
+              >
+                Добавить продукт
+              </Typography>
+            ) : null}
           </Box>
-          <Typography
-            // sx={{ display: "block" }}
-            className="second_typography"
-          >
-            <LoginIcon sx={{ width: "40px" }} />
-          </Typography>
+          {email ? (
+            <Typography onClick={handleLogout} className="second_typography">
+              <LogoutIcon />
+            </Typography>
+          ) : (
+            <Typography
+              onClick={() => navigate("/auth")}
+              className="second_typography"
+            >
+              <LoginIcon sx={{ width: "40px" }} />
+            </Typography>
+          )}
         </Toolbar>
       </AppBar>
     </Box>

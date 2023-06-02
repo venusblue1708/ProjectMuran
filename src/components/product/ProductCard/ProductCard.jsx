@@ -11,9 +11,10 @@ import Modal from "@mui/material/Modal";
 import RemoveRedEyeIcon from "@mui/icons-material/RemoveRedEye";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import "./ProductCard.css";
-// import { useWishList } from "../../contexts/WishListContextProvider";
+import { useWishList } from "../../contexts/WishListContextProvider";
 import { useProducts } from "../../contexts/AdminContextProvider";
-// import { ADMIN1, ADMIN2, ADMIN3 } from "../../../consts/const";
+import { useAuth } from "../../contexts/AuthContextProvider";
+import { ADMIN1, ADMIN2, ADMIN3 } from "../../consts/const";
 <style>
   @import
   url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
@@ -38,10 +39,10 @@ export default function ProductCard({ item }) {
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
   //   const { addProductToCard } = useCart();
-  //   const {
-  //     user: { email },
-  //   } = useAuth();
-  //   const { addProductToWishList, checkProductInWishList } = useWishList();
+  const {
+    user: { email },
+  } = useAuth();
+  const { addProductToWishList, checkProductInWishList } = useWishList();
   return (
     <Box className="product_card">
       <Card
@@ -72,13 +73,13 @@ export default function ProductCard({ item }) {
 
                 "&:hover": { backgroundColor: "transparent" },
               }}
-              //   onClick={() => {
-              //     addProductToWishList(item);
-              //   }}
+              onClick={() => {
+                addProductToWishList(item);
+              }}
             >
-              {/* <FavoriteBorderIcon
+              <FavoriteBorderIcon
                 color={checkProductInWishList(item.id) ? "error" : ""}
-              /> */}
+              />
             </Button>
             <Button
               variant="dark"
@@ -180,38 +181,40 @@ export default function ProductCard({ item }) {
             </Box>
           </Modal>
 
-          <Box>
-            <Button
-              className="btn_card"
-              sx={{
-                color: "#372821",
-                border: "1px solid #EDEDED",
-                fontSize: "10px",
-                width: "25px",
-                height: "40px",
-                margin: "6px",
-              }}
-              onClick={() => deleteProduct(item.id)}
-              size="small, "
-            >
-              Удалить
-            </Button>
-            <Button
-              className="btn_card"
-              sx={{
-                color: "#372821",
-                border: "1px solid #EDEDED",
-                fontSize: "10px",
-                width: "25px",
-                height: "40px",
-                margin: "6px",
-              }}
-              onClick={() => navigate(`/edit/${item.id}`)}
-              size="small"
-            >
-              Редак
-            </Button>
-          </Box>
+          {email === ADMIN1 || email === ADMIN2 || email === ADMIN3 ? (
+            <Box>
+              <Button
+                className="btn_card"
+                sx={{
+                  color: "#372821",
+                  border: "1px solid #EDEDED",
+                  fontSize: "10px",
+                  width: "25px",
+                  height: "40px",
+                  margin: "6px",
+                }}
+                onClick={() => deleteProduct(item.id)}
+                size="small, "
+              >
+                Удалить
+              </Button>
+              <Button
+                className="btn_card"
+                sx={{
+                  color: "#372821",
+                  border: "1px solid #EDEDED",
+                  fontSize: "10px",
+                  width: "25px",
+                  height: "40px",
+                  margin: "6px",
+                }}
+                onClick={() => navigate(`/edit/${item.id}`)}
+                size="small"
+              >
+                Редак
+              </Button>
+            </Box>
+          ) : null}
         </Box>
       </Card>
     </Box>
