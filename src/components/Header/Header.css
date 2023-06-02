@@ -1,0 +1,112 @@
+#dropdown {
+  display: flex;
+  justify-content: center;
+}
+.all_navbar {
+  display: flex;
+}
+.appbar_text {
+  margin-left: 15px;
+  margin-bottom: 3px;
+  margin-top: 3px;
+}
+.navbar_text {
+  color: #372821 !important;
+  font-family: "Pridi", serif !important;
+  font-weight: 600 !important;
+  font-size: medium !important;
+  margin-left: 40px !important;
+}
+.icon_button {
+  margin-bottom: -1px !important;
+}
+.logo {
+  margin: 2px !important;
+}
+.second_appbar {
+  min-height: 50px !important;
+  text-align: center !important;
+  width: 95% !important;
+}
+.second_typography {
+  margin-left: 50px !important;
+  font-family: "Noticia Text", serif !important;
+  font-weight: 400 !important;
+  justify-content: center !important;
+}
+.second_appbar :hover {
+  background-color: #decec6 !important;
+  height: 32px !important;
+  border-top: 3px solid #372821 !important ;
+}
+@media all and (max-width: 887px) {
+  .all_navbar {
+    width: 138.6% !important;
+  }
+  .second_appbar {
+    width: 96.1% !important;
+  }
+  .logo {
+    width: 450px !important;
+    height: 78px !important;
+  }
+  .icon_button {
+    display: none !important;
+  }
+}
+@media all and (max-width: 634px) {
+  .logo {
+    width: 270px !important;
+    height: 78px !important;
+  }
+  .icon_button {
+    display: none !important;
+  }
+  .second_typography {
+    font-size: 17px !important;
+  }
+  .second_appbar {
+    padding: 0px !important;
+    padding-left: 32px !important;
+  }
+}
+@media all and (max-width: 579px) {
+  .second_typography {
+    font-size: 14px !important;
+  }
+}
+@media all and (max-width: 500px) {
+  .icon {
+    margin-left: 20px;
+  }
+}
+@media all and (max-width: 486px) {
+  .logo {
+    width: 200px !important;
+  }
+}
+@media all and (max-width: 468px) {
+  .second_typography {
+    font-size: 12px !important;
+    margin-left: 25px !important;
+  }
+  .second_appbar {
+    padding-left: 23px !important;
+  }
+}
+@media all and (max-width: 385px) {
+  .icon {
+    margin-left: 60px;
+  }
+}
+@media all and (max-width: 353px) {
+  #dropdown {
+    display: none;
+  }
+  #menu_button {
+    display: flex;
+  }
+  .second_appbar {
+    justify-content: space-evenly;
+  }
+}

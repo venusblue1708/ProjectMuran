@@ -1,0 +1,85 @@
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+.nunito {
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  color: #969696;
+}
+.Nunito {
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  color: #372821;
+}
+@media all and (max-width: 1331px) {
+  .control_box {
+    width: 600px;
+  }
+}
+@media all and (max-width: 1222px) {
+  .vector3 {
+    width: 500px;
+  }
+}
+@media all and (max-width: 1005px) {
+  .control_box {
+    width: 450px;
+  }
+  .nunito {
+    font-size: 12px;
+  }
+}
+@media all and (max-width: 1018px) {
+  .control_box {
+    width: 420px;
+  }
+  .nunito {
+    font-size: 12px;
+  }
+  .control_left {
+    margin: 100px !important;
+  }
+}
+@media all and (max-width: 612px) {
+  .control_box {
+    width: 370px;
+  }
+  .nunito {
+    font-size: 10px;
+  }
+}
+@media all and (max-width: 599px) {
+  .control_box {
+    width: 250px;
+  }
+  .nunito {
+    margin: 17px !important;
+  }
+}
+@media all and (max-width: 562px) {
+  .vector3 {
+    display: none !important;
+  }
+}
+@media all and (max-width: 510px) {
+  .control_left {
+    margin-left: 50px !important;
+  }
+}
+@media all and (max-width: 464px) {
+  .control_box {
+    display: none;
+  }
+  .nunito {
+    margin: 14px !important;
+  }
+}
+@media all and (max-width: 475px) {
+  .control_box {
+    width: 200px;
+  }
+  .nunito {
+    margin: 14px !important;
+  }
+}
