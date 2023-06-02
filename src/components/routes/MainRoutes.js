@@ -7,6 +7,7 @@ import ProductPage from "../pages/ProductPage/ProductPage";
 import EditProduct from "../product/EditProduct/EditProduct";
 import Auth from "../Auth/Auth";
 import WishList from "../product/WishList/WishList";
+import Delivery from "../pages/Delivery/Delivery";
 
 const MainRoutes = () => {
   const PUBLIC_ROUTES = [
@@ -17,6 +18,7 @@ const MainRoutes = () => {
     { link: "/wishList", element: <WishList />, id: 8 },
     { link: "/edit/:id", element: <EditProduct />, id: 11 },
     { link: "/auth", element: <Auth />, id: 14 },
+    { link: "/delivery", element: <Delivery />, id: 6 },
   ];
   return (
     <div>

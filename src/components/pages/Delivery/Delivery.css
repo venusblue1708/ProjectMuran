@@ -1,0 +1,54 @@
+.Nunito {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: #000000;
+}
+.nunito {
+  font-family: "Nunito", sans-serif;
+  font-weight: 200;
+  line-height: 38px;
+}
+@media all and (max-width: 1457px) {
+  .delivery_img {
+    width: 1200px;
+  }
+}
+@media all and (max-width: 1205px) {
+  .delivery_img {
+    width: 1000px;
+  }
+}
+@media all and (max-width: 1005px) {
+  .delivery_img {
+    width: 900px;
+  }
+}
+@media all and (max-width: 648px) {
+  .delivery_img {
+    width: 700px;
+  }
+  .nunito {
+    width: 90%;
+  }
+  .Nunito {
+    width: 90%;
+  }
+  .delivery_box {
+    margin-left: 40px;
+  }
+}
+@media all and (max-width: 508px) {
+  .delivery_img {
+    width: 600px;
+  }
+}
+@media all and (max-width: 464px) {
+  .delivery_img {
+    width: 500px;
+  }
+}
+@media all and (max-width: 392px) {
+  .delivery_img {
+    width: 400px;
+  }
+}
