@@ -8,6 +8,8 @@ import EditProduct from "../product/EditProduct/EditProduct";
 import Auth from "../Auth/Auth";
 import WishList from "../product/WishList/WishList";
 import Delivery from "../pages/Delivery/Delivery";
+import Contacts from "../pages/Contacts/Contacts";
+import CategoryPage from "../pages/CategoryPage/CategoryPage";
 
 const MainRoutes = () => {
   const PUBLIC_ROUTES = [
@@ -19,6 +21,8 @@ const MainRoutes = () => {
     { link: "/edit/:id", element: <EditProduct />, id: 11 },
     { link: "/auth", element: <Auth />, id: 14 },
     { link: "/delivery", element: <Delivery />, id: 6 },
+    { link: "/contacts", element: <Contacts />, id: 4 },
+    { link: "/category", element: <CategoryPage />, id: 2 },
   ];
   return (
     <div>

@@ -125,15 +125,6 @@ const Footer = () => {
             alt="error"
           />
         </div>
-        <div style={{ display: "flex" }}>
-          <h5 style={{ marginRight: "60px" }} className="nunito">
-            Политика конфиденциональности
-          </h5>
-          <h5 style={{ marginRight: "100px" }} className="nunito">
-            Договор оферты
-          </h5>
-          <h5 className="nunito">Разработка сайта</h5>
-        </div>
       </div>
     </div>
   );

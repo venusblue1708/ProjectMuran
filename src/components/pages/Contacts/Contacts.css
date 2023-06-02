@@ -1,0 +1,86 @@
+.contact_text {
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  color: #000000;
+}
+.contact_h {
+  font-family: "Nunito", sans-serif;
+  font-weight: 900;
+  color: #372821;
+}
+@media all and (max-width: 1447px) {
+  .contact_img {
+    width: 1400px;
+  }
+}
+@media all and (max-width: 1402px) {
+  .contact_img {
+    width: 1300px;
+  }
+}
+@media all and (max-width: 1306px) {
+  .contact_img {
+    width: 1200px;
+  }
+}
+@media all and (max-width: 1216px) {
+  .contact_img {
+    width: 1100px;
+  }
+}
+@media all and (max-width: 1102px) {
+  .contact_img {
+    width: 900px;
+  }
+  .control_img {
+    display: none;
+  }
+}
+@media all and (max-width: 900px) {
+  .contact_img {
+    width: 800px;
+  }
+  .contact_text {
+    width: 90%;
+  }
+  .contact_h {
+    font-size: 30px;
+  }
+}
+@media all and (max-width: 644px) {
+  .contact_map {
+    width: 600px;
+  }
+}
+@media all and (max-width: 599px) {
+  .contact_text {
+    margin-left: 100px !important;
+  }
+}
+@media all and (max-width: 580px) {
+  .contact_img {
+    width: 600px;
+  }
+}
+@media all and (max-width: 532px) {
+  .contact_map {
+    width: 400px;
+  }
+}
+@media all and (max-width: 438px) {
+  .contact_img {
+    width: 500px;
+  }
+  .contact_text {
+    font-size: 14px;
+    line-height: 25px;
+  }
+}
+@media all and (max-width: 438px) {
+  .contact_img {
+    width: 400px;
+  }
+  .contact_map {
+    width: 350px;
+  }
+}

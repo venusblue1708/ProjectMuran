@@ -46,11 +46,11 @@
   .control_left {
     margin-top: 150px !important;
   }
-}
-@media all and (max-width: 612px) {
   .control_box {
     width: 370px;
   }
+}
+@media all and (max-width: 612px) {
   .nunito {
     font-size: 10px;
   }
