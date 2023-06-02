@@ -1,0 +1,234 @@
+{
+  "products": [
+    {
+      "title": "Balancy 01",
+      "description": "Маска-крем детоксицирующая для жирной кожи головы",
+      "volume": "200ml",
+      "price": 3100,
+      "purpose": "Линия себорегулирующая для жирной кожи головы",
+      "picture": "https://muranhair.com/wp-content/uploads/2021/02/01-1-768x768.png",
+      "type": "Balancy",
+      "id": 1
+    },
+    {
+      "title": "Healthy 01",
+      "description": "Средство очищающее для кожи головы с морской водой и янтарем",
+      "volume": "500ml",
+      "price": 1970,
+      "purpose": "Для кожи головы",
+      "picture": "https://muranhair.com/wp-content/uploads/2021/02/MDA01-768x512.jpg",
+      "type": "Healthy",
+      "id": 2
+    },
+    {
+      "title": "Energy 03",
+      "description": "Энергетические эфирные масла",
+      "volume": "3x10ml",
+      "price": 3100,
+      "purpose": "Линия против выпадения волос",
+      "picture": "https://muranhair.com/wp-content/uploads/2021/02/01-2.png",
+      "type": "Energy",
+      "id": 3
+    },
+    {
+      "title": "Purify 01",
+      "description": "Линия очищающая против перхоти",
+      "volume": "100ml",
+      "price": 1985,
+      "purpose": "Для кожи головы",
+      "picture": "https://muranhair.com/wp-content/uploads/2021/02/01-4.png",
+      "type": "Purify",
+      "id": 4
+    },
+    {
+      "title": "Energy 02",
+      "description": "Шампунь энергизирующий против выпадения волос",
+      "volume": "1000мл",
+      "price": 2890,
+      "purpose": "Линия против выпадения волос",
+      "picture": "https://muranhair.com/wp-content/uploads/2021/02/02-1-768x768.png",
+      "type": "Energy",
+      "id": 5
+    },
+    {
+      "title": "Energy 01",
+      "description": "Маска детоксицирующая для кожи головы",
+      "volume": "200ml",
+      "price": 3100,
+      "purpose": "Линия против выпадения волос",
+      "picture": "https://muranhair.com/wp-content/uploads/2021/02/01-2.png",
+      "type": "Energy",
+      "id": 6
+    },
+    {
+      "title": "Purify 02",
+      "description": "Маска-крем детоксицирующая против перхоти",
+      "volume": "200ml",
+      "price": 2910,
+      "purpose": "Линия очищающая против",
+      "picture": "https://muranhair.com/wp-content/uploads/2021/02/02-3.png",
+      "type": "Purify",
+      "id": 7
+    },
+    {
+      "title": "Energy 05",
+      "description": "Шампунь энергизирующий против выпадения волос",
+      "volume": "200ml",
+      "price": 1030,
+      "purpose": "Линия против выпадения волос",
+      "picture": "https://muranhair.com/wp-content/uploads/2021/02/MDA01-768x512.jpg",
+      "type": "Energy",
+      "id": 8
+    },
+    {
+      "title": "Rainbow 04",
+      "description": "Увлажняющий крем с дезинфицирующим действием",
+      "volume": "100ml",
+      "price": 620,
+      "purpose": "Линия очищающая против перхоти",
+      "picture": "https://muranhair.com/wp-content/uploads/2021/02/06-2.png",
+      "type": "Purify",
+      "id": 9
+    },
+    {
+      "title": "Purify 04",
+      "description": "Набор эфирных масел очищающего действия против перхоти",
+      "volume": "3×10 мл",
+      "price": 3100,
+      "purpose": "Линия очищающая против перхоти",
+      "picture": "https://muranhair.com/wp-content/uploads/2021/02/02-3.png",
+      "type": "Purify",
+      "id": 10
+    },
+    {
+      "title": "Daily 01-03",
+      "description": "Шампунь увлажняющий для всех типов волос",
+      "volume": "250мл",
+      "price": 985,
+      "purpose": "Линия увлажняющая для всех типов волос",
+      "picture": "https://muranhair.com/wp-content/uploads/2021/02/MDA01-768x512.jpg",
+      "type": "Daily",
+      "id": 11
+    },
+    {
+      "title": "Purify 05",
+      "description": "Концентрат очищающего действия против перхоти",
+      "volume": "7x7ml",
+      "price": 2400,
+      "purpose": "Линия очищающая против перхоти",
+      "picture": "https://muranhair.com/wp-content/uploads/2021/02/05-2.png",
+      "type": "Purify",
+      "id": 12
+    },
+    {
+      "title": "Energy 04",
+      "description": "Концентрат энергизирующий против выпадения волос",
+      "volume": "7x7ml",
+      "price": 2385,
+      "purpose": "Линия против выпадения волос",
+      "picture": "https://muranhair.com/wp-content/uploads/2021/02/MDA01-768x512.jpg",
+      "type": "Energy",
+      "id": 13
+    },
+    {
+      "title": "Purify 06",
+      "description": "Шампунь против перхоти",
+      "volume": "100ml",
+      "price": 425,
+      "purpose": "Линия очищающая против перхоти",
+      "picture": "https://muranhair.com/wp-content/uploads/2021/02/06-2.png",
+      "type": "Purify",
+      "id": 14
+    },
+    {
+      "title": "Balancy 03.1",
+      "description": "Эфирное масло корицы",
+      "volume": "10мл",
+      "price": 950,
+      "purpose": "Линия себорегулирующая для жирной кожи головы",
+      "picture": "https://muranhair.com/wp-content/uploads/2021/02/03.1-768x768.png",
+      "type": "Balancy",
+      "id": 15
+    },
+    {
+      "title": "Purify 07",
+      "description": "Лосьон против перхоти",
+      "volume": "60ml",
+      "price": 1540,
+      "purpose": "Линия очищающая против перхоти",
+      "picture": "https://muranhair.com/wp-content/uploads/2021/02/06-2.png",
+      "type": "Purify",
+      "id": 16
+    },
+    {
+      "title": "Energy 06",
+      "description": "Лосьон энергизирующий против выпадения волос",
+      "volume": "60ml",
+      "price": 1680,
+      "purpose": "Линия против выпадения волос",
+      "picture": "https://muranhair.com/wp-content/uploads/2021/02/MDA01-768x512.jpg",
+      "type": "Energy",
+      "id": 17
+    },
+    {
+      "title": "Daily 02 – 04",
+      "description": "Кондиционер увлажняющий для всех типов волос",
+      "volume": "250мл",
+      "price": 1180,
+      "purpose": "Линия увлажняющая для всех типов волос",
+      "picture": "https://muranhair.com/wp-content/uploads/2021/02/MDA02.jpg",
+      "type": "Daily",
+      "id": 18
+    },
+    {
+      "title": "Balancy 03.2",
+      "description": "Эфирное масло кедра",
+      "volume": "10мл",
+      "price": 950,
+      "purpose": "Линия себорегулирующая для жирной кожи головы",
+      "picture": "https://muranhair.com/wp-content/uploads/2021/02/03.2-768x768.png",
+      "type": "Balancy",
+      "id": 19
+    },
+    {
+      "title": "Balancy 4",
+      "description": "Концентрат себорегулирующий для жирной кожи головы",
+      "volume": "7x7ml",
+      "price": 2400,
+      "purpose": "Линия себорегулирующая для жирной кожи головы",
+      "picture": "https://muranhair.com/wp-content/uploads/2021/02/06-768x768.png",
+      "type": "Balancy",
+      "id": 20
+    },
+    {
+      "title": "Balancy 5",
+      "description": "Шампунь себорегулирующий для жирной кожи головы",
+      "volume": "250мл",
+      "price": 1000,
+      "purpose": "Линия себорегулирующая для жирной кожи головы",
+      "picture": "https://muranhair.com/wp-content/uploads/2021/02/05-768x768.png",
+      "type": "Balancy",
+      "id": 21
+    },
+    {
+      "title": "",
+      "description": "",
+      "volume": "",
+      "price": 0,
+      "picture": "",
+      "purpose": "",
+      "type": "",
+      "id": 22
+    },
+    {
+      "title": "adsad",
+      "description": "asdasd",
+      "volume": "35",
+      "price": 2332,
+      "picture": "safas",
+      "purpose": "32",
+      "type": "dfsdf",
+      "id": 23
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+.admin_blog {
+  background-color: #fefae0;
+  margin-top: 150px;
+  border-radius: 100px;
+  box-shadow: 50px 30px 30px #f2e8cf;
+}
+.admin_input {
+  border-color: #6c584c;
+}
+.admin_btn:hover {
+  background-color: brown;
+  opacity: 0.3;
+}
+@media all and (max-width: 881px) {
+  .admin_blog {
+    margin-left: 400px !important;
+  }
+}
+@media all and (max-width: 801px) {
+  .admin_blog {
+    width: 500px !important;
+    margin-left: 200px !important;
+  }
+}
+
+@media all and (max-width: 611px) {
+  .admin_blog {
+    width: 400px !important;
+    margin-left: 200px !important;
+  }
+}
+@media all and (max-width: 533px) {
+  .admin_blog {
+    width: 350px !important;
+    margin-left: 180px !important;
+  }
+}
+@media all and (max-width: 469px) {
+  .admin_blog {
+    width: 300px !important;
+    margin-left: 160px !important;
+  }
+}
+@media all and (max-width: 414px) {
+  .admin_blog {
+    width: 280px !important;
+    margin-left: 130px !important;
+  }
+}
+@media all and (max-width: 378px) {
+  .admin_blog {
+    width: 250px !important;
+    margin-left: 100px !important;
+  }
+}
+@media all and (max-width: 378px) {
+  .admin_blog {
+    margin-left: 80px !important;
+  }
+}
