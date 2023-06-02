@@ -11,6 +11,8 @@ import Modal from "@mui/material/Modal";
 import RemoveRedEyeIcon from "@mui/icons-material/RemoveRedEye";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import "./ProductCard.css";
+// import { useWishList } from "../../contexts/WishListContextProvider";
+import { useProducts } from "../../contexts/AdminContextProvider";
 // import { ADMIN1, ADMIN2, ADMIN3 } from "../../../consts/const";
 <style>
   @import
@@ -31,7 +33,7 @@ const style = {
 };
 export default function ProductCard({ item }) {
   const navigate = useNavigate();
-  //   const { deleteProduct } = useProducts();
+  const { deleteProduct } = useProducts();
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
@@ -189,7 +191,7 @@ export default function ProductCard({ item }) {
                 height: "40px",
                 margin: "6px",
               }}
-              // onClick={() => deleteProduct(item.id)}
+              onClick={() => deleteProduct(item.id)}
               size="small, "
             >
               Удалить

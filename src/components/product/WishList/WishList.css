@@ -1,0 +1,40 @@
+.wish_list_title {
+  font-size: 45px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 900;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: -30px;
+}
+.wish_list_text {
+  color: #372821;
+  font-family: "Montserrat", san-serif !important;
+  font-weight: 700 !important;
+  font-size: 20px !important;
+}
+.wish_list_volume {
+  font-family: "Montserrat", san-serif !important;
+  font-weight: 400 !important;
+  color: #6c757d !important;
+  font-size: 20px;
+}
+.wish_list_price {
+  margin-top: 70px !important;
+  font-size: 25px !important;
+  font-family: "Montserrat, san-serif" !important;
+  font-weight: 700 !important;
+}
+.btn_wish_list {
+  display: "flex";
+  margin-top: 80px;
+  width: 35%;
+  height: 50px;
+  background-color: #ffffff;
+  width: 30%;
+  border: 1px solid #d9d9d9 !important;
+}
+.btn_wish_list:hover {
+  background-color: #e5e5e5;
+  box-shadow: 20px 10px 10px #f2f2f2;
+}

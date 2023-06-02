@@ -42,10 +42,18 @@ const AdminContextProvider = ({ children }) => {
     await axios.post(API, newProduct);
     getProducts();
   };
-
+  const deleteProduct = async (id) => {
+    await axios.delete(`${API}/${id}`);
+    getProducts();
+  };
   const getProductDetails = async (id) => {
     const { data } = await axios.get(`${API}/${id}`);
     dispatch({ type: "GET_PRODUCT_DETAILS", payload: data });
+  };
+
+  const saveEditedProduct = async (editedProduct) => {
+    await axios.patch(`${API}/${editedProduct.id}`, editedProduct);
+    getProducts();
   };
 
   const fetchByParams = async (query, value) => {
@@ -62,12 +70,14 @@ const AdminContextProvider = ({ children }) => {
   };
 
   const values = {
+    saveEditedProduct,
     fetchByParams,
     getProductDetails,
     productDetails: state.productDetails,
     addProduct,
     getProducts,
     products: state.products,
+    deleteProduct,
     fetchByParams,
   };
 
