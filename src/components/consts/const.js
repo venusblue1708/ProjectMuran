@@ -4,8 +4,8 @@ export const ADMIN1 = "burkanbekovaaigerim02@gmail.com";
 export const ADMIN2 = "12345@gmail.com";
 export const ADMIN3 = "jazmiraulanbekova@gmail.com";
 
-// export const CART = {
-//   GET_CART: "GET_CART",
-//   GET_CART_LENGTH: "GET_CART_LENGTH",
-//   ORDERING_GET_CART: "ORDERING_GET_CART",
-// };
+export const CART = {
+  GET_CART: "GET_CART",
+  GET_CART_LENGTH: "GET_CART_LENGTH",
+  ORDERING_GET_CART: "ORDERING_GET_CART",
+};

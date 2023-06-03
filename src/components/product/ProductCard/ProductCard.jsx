@@ -15,6 +15,7 @@ import { useWishList } from "../../contexts/WishListContextProvider";
 import { useProducts } from "../../contexts/AdminContextProvider";
 import { useAuth } from "../../contexts/AuthContextProvider";
 import { ADMIN1, ADMIN2, ADMIN3 } from "../../consts/const";
+import { useCart } from "../../contexts/CartContextProvider";
 <style>
   @import
   url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
@@ -38,7 +39,7 @@ export default function ProductCard({ item }) {
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
-  //   const { addProductToCard } = useCart();
+  const { addProductToCard } = useCart();
   const {
     user: { email },
   } = useAuth();
@@ -143,7 +144,7 @@ export default function ProductCard({ item }) {
           <Button
             onClick={() => {
               handleOpen();
-              //   addProductToCard(item);
+              addProductToCard(item);
             }}
             className="btn_card"
           >

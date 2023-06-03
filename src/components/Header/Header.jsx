@@ -23,8 +23,12 @@ import Menu from "@mui/material/Menu";
 import { useProducts } from "../contexts/AdminContextProvider";
 import { useAuth } from "../contexts/AuthContextProvider";
 import { ADMIN1, ADMIN2, ADMIN3 } from "../consts/const";
-import { getCountProductsInWishList } from "../functions/functions";
+import {
+  getCountProductsInCart,
+  getCountProductsInWishList,
+} from "../functions/functions";
 import { useWishList } from "../contexts/WishListContextProvider";
+import { useCart } from "../contexts/CartContextProvider";
 
 <style>
   @import
@@ -84,6 +88,7 @@ export default function Header() {
   const [count, setCount] = React.useState(0);
   const [like, setLike] = React.useState(0);
   const { addProductToWishList } = useWishList();
+  const { addProductToCard } = useCart();
 
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const {
@@ -100,6 +105,9 @@ export default function Header() {
   React.useEffect(() => {
     setLike(getCountProductsInWishList());
   }, [addProductToWishList]);
+  React.useEffect(() => {
+    setCount(getCountProductsInCart());
+  }, [addProductToCard]);
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
   };

@@ -10,19 +10,21 @@ import WishList from "../product/WishList/WishList";
 import Delivery from "../pages/Delivery/Delivery";
 import Contacts from "../pages/Contacts/Contacts";
 import CategoryPage from "../pages/CategoryPage/CategoryPage";
+import Cart from "../Cart/Cart";
 
 const MainRoutes = () => {
   const PUBLIC_ROUTES = [
     { link: "/", element: <HomePage />, id: 1 },
-    { link: "/*", element: <NotFoundPage />, id: 7 },
-    { link: "/admin", element: <AdminPage />, id: 9 },
-    { link: "/products", element: <ProductPage />, id: 3 },
-    { link: "/wishList", element: <WishList />, id: 8 },
-    { link: "/edit/:id", element: <EditProduct />, id: 11 },
-    { link: "/auth", element: <Auth />, id: 14 },
-    { link: "/delivery", element: <Delivery />, id: 6 },
-    { link: "/contacts", element: <Contacts />, id: 4 },
-    { link: "/category", element: <CategoryPage />, id: 2 },
+    { link: "/*", element: <NotFoundPage />, id: 2 },
+    { link: "/admin", element: <AdminPage />, id: 3 },
+    { link: "/products", element: <ProductPage />, id: 4 },
+    { link: "/wishList", element: <WishList />, id: 5 },
+    { link: "/edit/:id", element: <EditProduct />, id: 6 },
+    { link: "/auth", element: <Auth />, id: 7 },
+    { link: "/delivery", element: <Delivery />, id: 8 },
+    { link: "/contacts", element: <Contacts />, id: 9 },
+    { link: "/category", element: <CategoryPage />, id: 10 },
+    { link: "/cart", element: <Cart />, id: 11 },
   ];
   return (
     <div>
