@@ -1,0 +1,33 @@
+.payment_title {
+  font-size: 45px !important;
+  font-family: "Nunito", sans-serif !important;
+  font-weight: 900 !important;
+  display: flex !important;
+  justify-content: center !important;
+  margin: 40px !important;
+}
+.payment_inp {
+  border: none !important;
+  background-color: #f2f2f2 !important;
+  height: 54px !important;
+  width: 250px !important;
+  margin: 10px !important;
+}
+@media all and (max-width: 558px) {
+  .payment_title {
+    font-size: 35px !important;
+    width: 500px !important;
+  }
+}
+@media all and (max-width: 448px) {
+  .payment_title {
+    font-size: 30px !important;
+    width: 400px !important;
+  }
+}
+@media all and (max-width: 370px) {
+  .payment_title {
+    font-size: 25px !important;
+    width: 300px !important;
+  }
+}

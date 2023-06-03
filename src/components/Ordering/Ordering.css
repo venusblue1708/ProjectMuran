@@ -1,0 +1,158 @@
+.ordering_title {
+  display: flex;
+  justify-content: center;
+
+  font-family: "Nunito", sans-serif !important;
+  font-weight: 900 !important;
+  font-size: 50px !important;
+}
+.ordering_text {
+  color: #372821;
+  font-family: "Montserrat", san-serif !important;
+  font-weight: 700 !important;
+  font-size: 20px !important;
+}
+.ordering_price {
+  margin-top: 70px !important;
+  font-size: 32px !important;
+  font-family: "Montserrat, san-serif" !important;
+  font-weight: 700 !important;
+}
+.count {
+  font-family: "Montserrat", san-serif !important;
+  font-weight: 400 !important;
+  color: #6c757d !important;
+  font-size: 20px;
+}
+.ordering_inp {
+  border: none;
+  background-color: #f2f2f2;
+  height: 60px;
+  width: 250px;
+}
+.inp_span {
+  font-family: "Montserrat", san-serif !important;
+  font-weight: 400 !important;
+  font-size: 23px;
+  margin: 13px;
+}
+.btn_ordering {
+  color: #2b2d42 !important;
+  font-size: 12px !important;
+  margin-top: 80px !important;
+  width: 35% !important;
+  height: 50px !important;
+  background-color: #ffffff !important;
+  margin-left: 50% !important;
+  border: 1px solid #d9d9d9 !important;
+}
+.btn_ordering:hover {
+  background-color: #e5e5e5 !important;
+  box-shadow: 20px 10px 10px #f2f2f2 !important;
+}
+.text_ordering {
+  color: #372821;
+  font-family: "Montserrat", san-serif !important;
+  font-weight: 700 !important;
+  font-size: 20px !important;
+}
+@media all and (max-width: 788px) {
+  .ordering_img {
+    width: 270px !important;
+  }
+  .ordering_text {
+    font-size: 18px !important;
+  }
+}
+@media all and (max-width: 761px) {
+  .ordering_box_control {
+    flex-direction: column !important;
+    width: 800px !important;
+  }
+  .ordering_img {
+    width: 370px !important;
+  }
+  .ordering_text {
+    font-size: 22px !important;
+  }
+  .ordering_inp {
+    width: 500px !important;
+  }
+}
+@media all and (max-width: 644px) {
+  .ordering_box_control {
+    width: 700px !important;
+  }
+  .ordering_img {
+    width: 300px !important;
+  }
+  .ordering_text {
+    font-size: 20px !important;
+  }
+}
+@media all and (max-width: 558px) {
+  .ordering_box_control {
+    width: 550px !important;
+  }
+  .ordering_img {
+    width: 250px !important;
+  }
+  .ordering_total_price {
+    margin-left: 350px !important;
+    font-size: 30px !important;
+  }
+  .ordering_price {
+    font-size: 28px !important;
+  }
+  .ordering_inp {
+    width: 300px !important;
+  }
+}
+@media all and (max-width: 448px) {
+  .ordering_box_control {
+    width: 420px !important;
+  }
+  .ordering_title {
+    font-size: 35px !important;
+  }
+  .ordering_img {
+    width: 170px !important;
+    height: 170px !important;
+  }
+  .ordering_total_price {
+    margin-left: 300px !important;
+    font-size: 27px !important;
+  }
+  .ordering_price {
+    font-size: 25px !important;
+  }
+  .ordering_text {
+    font-size: 18px !important;
+  }
+  .btn_ordering {
+    width: 150px !important;
+  }
+}
+@media all and (max-width: 370px) {
+  .ordering_box_control {
+    width: 370px !important;
+  }
+  .ordering_title {
+    font-size: 30px !important;
+  }
+  .ordering_card {
+    flex-direction: column;
+    padding: 0px !important;
+  }
+  .ordering_img {
+    width: 200px !important;
+    height: 200px !important;
+  }
+  .ordering_total_price {
+    margin-top: 0px !important;
+  }
+
+  .ordering_text {
+    font-size: 20px !important;
+  }
+}

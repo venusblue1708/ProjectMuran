@@ -19,7 +19,7 @@ const DetailsPage = () => {
     <div>
       <Box>
         <div
-          className="details-card"
+          class="details-card"
           style={{
             display: "flex",
             justifyContent: "space-evenly",
