@@ -11,6 +11,7 @@ import Delivery from "../pages/Delivery/Delivery";
 import Contacts from "../pages/Contacts/Contacts";
 import CategoryPage from "../pages/CategoryPage/CategoryPage";
 import Cart from "../Cart/Cart";
+import DetailsPage from "../pages/DetailsPage/DetailsPage";
 
 const MainRoutes = () => {
   const PUBLIC_ROUTES = [
@@ -25,6 +26,7 @@ const MainRoutes = () => {
     { link: "/contacts", element: <Contacts />, id: 9 },
     { link: "/category", element: <CategoryPage />, id: 10 },
     { link: "/cart", element: <Cart />, id: 11 },
+    { link: "/details/:id", element: <DetailsPage />, id: 12 },
   ];
   return (
     <div>

@@ -90,7 +90,7 @@ export default function ProductCard({ item }) {
 
                 "&:hover": { backgroundColor: "transparent" },
               }}
-              //   onClick={() => navigate(`/details/${item.id}`)}
+              onClick={() => navigate(`/details/${item.id}`)}
             >
               <RemoveRedEyeIcon />
             </Button>
